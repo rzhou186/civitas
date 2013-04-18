@@ -49,7 +49,7 @@ body {
 }
 
 .landing-page .hero .hero-inner {
-	padding: 20px;
+	padding: 40px;
 }
 
 .landing-page .options {
@@ -74,8 +74,8 @@ body {
 .landing-page .options .row .span4 .span4-inner {
 	background-color: #fafafa;
 	text-align: center;
-	padding: 20px;
-	height: 270px;
+	padding: 35px 20px 35px 20px;
+	height: 240px;
 	width: 250px;
 	margin: auto;
 	-webkit-border-radius: 4px;
@@ -86,8 +86,8 @@ body {
 .landing-page .options .row .span4 .span4-inner img {
 	margin-left: auto;
 	margin-right: auto;
-	height: 100px;
-	width: 100px;
+	height: 70px;
+	width: 70px;
 }
 
 .landing-page .options .row .span4 .span4-inner h1 {
@@ -106,6 +106,38 @@ body {
 
 .selection-page {
 	display: none;
+}
+
+.selection-page .subhead {
+	height: 230px;
+	width: auto;
+	background-image: url('../images/backgrounds/city.png');
+	background-repeat: no-repeat;
+	background-color: #000000;
+	background-size: cover;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+	-webkit-box-shadow: 0 2px 5px #999999;
+	   -moz-box-shadow: 0 2px 5px #999999;
+			box-shadow: 0 2px 5px #999999;
+}
+
+.selection-page .row {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.selection-page .row .span4 {
+	min-height: 300px;
+	width: 300px;
+	background-color: red;
+}
+
+.selection-page .row .span8 {
+	min-height: 300px;
+	width: 620px;
+	background-color: blue;
 }
 
 .application-page {

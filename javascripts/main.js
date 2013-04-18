@@ -4,4 +4,3 @@
  * Initializes web application.
  * 
  */
-
