@@ -3,7 +3,7 @@ body {
 }
 
 .divider {
-	margin: 20px 0px 20px 0px;
+	margin: 40px 0px 20px 0px;
 }
 
 .topbar {
@@ -31,6 +31,7 @@ body {
 
 .landing-page {
 	/*display: none;*/
+	min-height: 760px;
 }
 
 .landing-page .hero {
@@ -53,7 +54,7 @@ body {
 }
 
 .landing-page .options {
-	padding: 40px 0px 20px 0px;
+	padding-top: 40px;
 	height: 320px;
 	width: auto;
 }
@@ -93,6 +94,7 @@ body {
 .landing-page .options .row .span4 .span4-inner h1 {
 	font-family: "CrimsonSemibold", Georgia, serif;
 	font-size: 24px;
+	font-weight: normal;
 	margin: 10px 0px 5px 0px;
 }
 
@@ -106,6 +108,7 @@ body {
 
 .selection-page {
 	display: none;
+	min-height: 870px;
 }
 
 .selection-page .subhead {
@@ -125,19 +128,34 @@ body {
 
 .selection-page .row {
 	margin-top: 40px;
-	margin-bottom: 20px;
+}
+
+.selection-page .row h1 {
+	font-family: "CrimsonSemibold", Georgia, serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0px;
+}
+
+.selection-page .row p {
+	font-size: 16px;
 }
 
 .selection-page .row .span4 {
-	min-height: 300px;
+	min-height: 600px;
 	width: 300px;
-	background-color: red;
+	text-align: center;
 }
 
 .selection-page .row .span8 {
-	min-height: 300px;
-	width: 620px;
-	background-color: blue;
+	background-color: #ffffff;
+	min-height: 600px;
+	width: 600px;
+	margin-left: 40px;
+	-webkit-box-shadow: 0 2px 5px #999999;
+	   -moz-box-shadow: 0 2px 5px #999999;
+			box-shadow: 0 2px 5px #999999;
 }
 
 .application-page {
