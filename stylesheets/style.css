@@ -1,0 +1,136 @@
+body {
+	font-family: "CrimsonRoman", Georgia, serif;
+}
+
+.divider {
+	margin: 20px 0px 20px 0px;
+}
+
+.topbar {
+	height: 100px;
+	width: auto;
+}
+
+.topbar .topbar-inner {
+	padding: 20px 0px 20px 0px;
+}
+
+.topbar .topbar-inner .logo {
+	height: 60px;
+	width: 180px;
+	text-align: center;
+}
+
+.topbar .topbar-inner .logo h1 {
+	font-family: "CrimsonRoman", Georgia, serif;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 60px;
+	margin: 0px;
+}
+
+.landing-page {
+	/*display: none;*/
+}
+
+.landing-page .hero {
+	height: 400px;
+	width: auto;
+	background-image: url('../images/backgrounds/city.png');
+	background-repeat: no-repeat;
+	background-color: #000000;
+	background-size: cover;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+	-webkit-box-shadow: 0 2px 5px #999999;
+	   -moz-box-shadow: 0 2px 5px #999999;
+			box-shadow: 0 2px 5px #999999;
+}
+
+.landing-page .hero .hero-inner {
+	padding: 20px;
+}
+
+.landing-page .options {
+	padding: 40px 0px 20px 0px;
+	height: 320px;
+	width: auto;
+}
+
+.landing-page .options .row .span4 {
+	padding: 5px;
+	background-color: #ffffff;
+	height: 310px;
+	width: 290px;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+	-webkit-box-shadow: 0 2px 5px #999999;
+	   -moz-box-shadow: 0 2px 5px #999999;
+			box-shadow: 0 2px 5px #999999;
+}
+
+.landing-page .options .row .span4 .span4-inner {
+	background-color: #fafafa;
+	text-align: center;
+	padding: 20px;
+	height: 270px;
+	width: 250px;
+	margin: auto;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+.landing-page .options .row .span4 .span4-inner img {
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 100px;
+}
+
+.landing-page .options .row .span4 .span4-inner h1 {
+	font-family: "CrimsonSemibold", Georgia, serif;
+	font-size: 24px;
+	margin: 10px 0px 5px 0px;
+}
+
+.landing-page .options .row .span4 .span4-inner p {
+	font-size: 16px;
+}
+
+.landing-page .options .row .span4 .span4-inner .btn {
+	margin: 18px 0px 0px 0px;
+}
+
+.selection-page {
+	display: none;
+}
+
+.application-page {
+	display: none;
+}
+
+.footer {
+	height: 100px;
+	width: auto;
+}
+
+.footer .footer-inner {
+	padding: 10px 0px 30px 0px;
+	text-align: center;
+}
+
+.footer .footer-inner h1 {
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0px;
+}
+
+.footer .footer-inner p {
+	line-height: 30px;
+	font-size: 16px;
+	margin: 0px;
+}
