@@ -79,7 +79,7 @@
 							<div class="span4-inner">
 								<img src="images/icons/apply.png">
 								<h1>Apply</h1>
-								<p>Seeking a summer internship or job in the social sector? Apply to over 170 companies and nonprofits - with a single application.</p>
+								<p>Seeking a summer internship or job in the social sector? Apply to over 3 companies and nonprofits - with a single application.</p>
 								<button class="next-app-step btn btn-info btn-block">Open new application</button>
 							</div>
 						</div>
@@ -87,7 +87,7 @@
 							<div class="span4-inner">
 								<img src="images/icons/discover.png">
 								<h1>Discover</h1>
-								<p>Browse a collection of over 170 nonprofits and companies in the social sector. Filter organizations by location, interest, and other.</p>
+								<p>Browse a collection of over 3 nonprofits and companies in the social sector. Filter organizations by location, interest, and other.</p>
 								<button class="btn btn-info btn-block" disabled="disabled">Browse organizations list</button>
 							</div>
 						</div>
