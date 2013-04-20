@@ -63,7 +63,7 @@ function allCompanies(data) {
 	for (var i=0; i<companyData.length; i++){
 		$('.partner-list').append(
 			'<div class="partner">' + 
-				'<input type="checkbox" value="' + companyData[i].id + '">' + 
+				'<input type="checkbox" value="' + companyData[i].name + '">' + 
 				'<div class="partner-name" id="' + companyData[i].id + '">' + 
 					companyData[i].name + 
 				'</div>' + 
