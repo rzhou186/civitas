@@ -217,6 +217,17 @@ body {
 
 .application-page {
 	display: none;
+	text-align: center;
+}
+
+.application-page .btn {
+	margin-top: 30px;
+	font-size: 24px;
+	width: 500px;
+	height: 60px;
+	-webkit-box-shadow: 0 2px 5px #999999;
+       -moz-box-shadow: 0 2px 5px #999999;
+            box-shadow: 0 2px 5px #999999;
 }
 
 .footer {
