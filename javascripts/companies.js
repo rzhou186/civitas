@@ -23,12 +23,13 @@ function allJobsFromID(data) {
 /* All companies returned . This function adds the data to a list/some structure */
 function allCompanies(data) {
 	var obj = jQuery.parseJSON(data);
-	for (var i = 0; i < obj[0].length; i++) {
+	for (var i = 0; i < obj.length; i++) {
 		var company = {
-			id : obj[0][i].company_id,
-			description : obj[0][i].company_description,
-			url : obj[0][i].company_url,
-			image : obj[0][i].company_image
+			id : obj[i][0].company_id,
+			name : obj[i][1].company_name,
+			description : objlobj[i][2].company_description,
+			url : obj[i][3].company_url,
+			image : obj[i][4].company_image
 		};
 		companyData.push(company);
 	}
