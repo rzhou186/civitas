@@ -14,7 +14,12 @@ function make_base_auth(user, password) {
 
 /* Company data returned. This function adds the data to a list/some structure */
 function companyEvent(data) {
-	console.log(data);
+	var obj = jQuery.parseJSON(data);
+	var company = {
+		name : obj[0][1].company_name,
+		description : obj[0][2].company_description
+	};
+	return company;
 }
 
 /* Job data returned. This function adds the data to a list/some structure */
