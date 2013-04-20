@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Civitas</title>
+		<title>Civitas PHP</title>
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
@@ -101,7 +101,7 @@
 							<input class="btn btn-info" type="submit" value="Apply">
 						</form>
 					</div>
-					<div class="span8">
+					<div class="span8 description">
 						<h1>Hello.</h1>
 						<p>What's your name?</p>
 					</div>

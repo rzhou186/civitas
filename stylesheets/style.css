@@ -192,9 +192,9 @@ body {
 	font-size: 20px;
 }
 
-.selection-page .row .span8 {
+.selection-page .row .description {
 	background-color: #ffffff;
-	min-height: 560px;
+	min-height: 520px;
 	width: 520px;
 	padding: 40px;
 	margin-left: 40px;
@@ -203,14 +203,15 @@ body {
 			box-shadow: 0 2px 5px #999999;
 }
 
-.selection-page .row .span8 h1 {
+.selection-page .row .description h1 {
 	font-family: "CrimsonSemibold", Georgia, serif;
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: normal;
+	line-height: 28px;
 	margin: 0px 0px 20px 0px;
 }
 
-.selection-page .row .span8 p {
+.selection-page .row .description p {
 	font-size: 18px;
 }
 
