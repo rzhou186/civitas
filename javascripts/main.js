@@ -17,6 +17,31 @@ $(document).ready(function(){
 
 });
 
+
+function post_to_url(path, params, method) {
+    method = method || "post"; // Set method to post by default, if not specified.
+
+    // The rest of this code assumes you are not using a library.
+    // It can be made less wordy if you use one.
+    var form = document.createElement("form");
+    form.setAttribute("method", method);
+    form.setAttribute("action", path);
+
+    for(var key in params) {
+        //if(params.hasOwnProperty(key)) {
+            var hiddenField = document.createElement("textarea");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", key);
+            hiddenField.setAttribute("value", params[key]);
+
+            form.appendChild(hiddenField);
+         //}
+    }
+
+    document.body.appendChild(form);
+    form.submit();
+}
+
 /* This function advances the client to the next phase of his/her application */
 function displayCurrStep(currStep){
 
@@ -53,24 +78,16 @@ function displayCurrStep(currStep){
 
 	}
 	else if (currStep === 3) {
+		var form_data = new Array();
 		var q1 = $('#q1').val();
 		var q2 = $('#q2').val();
 		var q3 = $('#q3').val();
 		var q4 = $('#q4').val();
-		var form_data = {
-		q1 : q1,
-		q2 : q2,
-		q3 : q3,
-		q4 : q4
-	};
-		var request = $.ajax({
-		url : "resume",
-		type: "POST",
-		data : form_data,
-		success: function(data){
-			allCompanies(data);
-		}
-	});
+		form_data.push(q1);
+		form_data.push(q2);
+		form_data.push(q3);
+		form_data.push(q4);
+		post_to_url("resume", form_data, "POST");
 	}
 
 }
