@@ -23,6 +23,7 @@ function allJobsFromID(data) {
 
 /* All companies returned . This function adds the data to a list/some structure */
 function allCompanies(data) {
+	console.log(data);
 	var obj = jQuery.parseJSON(data);
 	for (var i = 0; i < obj.length; i++) {
 		var company = {
@@ -49,7 +50,6 @@ function allCompanies(data) {
 			'</div>'
 		);
 	}
-
 }
 
 /* make AJAX request to get company data from a given ID */
@@ -110,7 +110,10 @@ function getAllJobs(companyID) {
 function getAllCompanies() {
 
 	var request = $.ajax({
-		url: "http://goodjobs.rogr.me/api/list-companies.php",
+		url : "https://data.guidestar.org/v1/search/?q=zip:10027",
+		username : "bbrandt@guidestar.org",
+		password : "gu1d3st@r",
+		// url: "http://goodjobs.rogr.me/api/list-companies.php",
 		type: "GET",
 		success: function(data){
 			allCompanies(data);
