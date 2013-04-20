@@ -149,11 +149,11 @@ body {
 	text-align: center;
 }
 
-.selection-page .row .span4 form {
+.selection-page .row .span4 .partners {
 	margin: 0px;
 }
 
-.selection-page .row .span4 form .partner-list {
+.selection-page .row .span4 .partners .partner-list {
 	height: 468px;
 	width: 300px;
 	margin: 0px;
@@ -161,7 +161,7 @@ body {
 	overflow-y: auto;
 }
 
-.selection-page .row .span4 form .partner-list .partner {
+.selection-page .row .span4 .partners .partner-list .partner {
 	height: auto;
 	width: 270px;
 	padding: 5px 20px 5px 10px;
@@ -170,7 +170,7 @@ body {
 	text-align: left;
 }
 
-.selection-page .row .span4 form .partner-list .partner input {
+.selection-page .row .span4 .partners .partner-list .partner input {
 	display: inline-block;
 	height: auto;
 	width: 25px;
@@ -178,13 +178,13 @@ body {
 	margin: -5px 0px 0px 0px;
 }
 
-.selection-page .row .span4 form .partner-list .partner .partner-name {
+.selection-page .row .span4 .partners .partner-list .partner .partner-name {
 	display: inline-block;
 	height: auto;
 	width: 240px;
 }
 
-.selection-page .row .span4 form .btn {
+.selection-page .row .span4 .partners .btn {
 	height: 50px;
 	width: 300px;
 	margin: 20px 0px 0px 0px;

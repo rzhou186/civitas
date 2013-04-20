@@ -11,5 +11,7 @@
 var currStep = 0;
 
 // This variable stashes all of our company data
-// The below functions will modify and update this array
 var companyData = new Array();
+
+// This variable stashes the companies that the client is applying to
+var clientCompanies = new Array();
