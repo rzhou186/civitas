@@ -106,7 +106,7 @@ function getAllCompanies() {
 		type: "GET",
 		beforeSend : function(req) {
 			req.setRequestHeader('Authorization', auth);
-		}
+		},
 		success: function(data){
 			allCompanies(data);
 		}
