@@ -51,8 +51,8 @@ function allCompanies(data) {
 			name : obj[i][1].company_name,
 			description : obj[i][2].company_description,
 			url : obj[i][3].company_url,
-			image : obj[i][4].company_image
-			location : obj[i][5].company_location;
+			image : obj[i][4].company_image,
+			location : obj[i][5].company_location
 		};
 		companyData.push(company);
 	}
