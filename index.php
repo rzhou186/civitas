@@ -97,7 +97,6 @@
 						<hr>
 						<form>
 							<div class="partner-list">
-								
 							</div>
 							<input class="btn btn-info" type="submit" value="Apply">
 						</form>

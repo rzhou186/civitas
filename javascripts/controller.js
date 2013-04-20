@@ -7,8 +7,7 @@
 
 function initCompanyDescrips() {
 	$('.partner .partner-name').click(function(){
-		alert('gahahh');
-		var id = this.attr('id');
-		alert(id);
+		var id = $(this).attr('id');
+		appendCompanyDescrip(id);
 	});
 }
