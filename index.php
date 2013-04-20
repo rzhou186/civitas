@@ -10,16 +10,17 @@
 		<link rel="stylesheet" href="stylesheets/style.css" type="text/css"/>
 		<style>
 			#civitas-user {
-				margin-top: 30px;
+                margin-top: 20px;
+                text-align: right;
 			}
 		</style>
 
 	</head>
 
-<!-- 	<? 
-		session_start(); 
+	<? 
+		//session_start(); 
 		include_once('linkedin.php');
-	?> -->
+    ?> 
 
 	<body>
 		<div class="container">		
@@ -37,8 +38,8 @@
                     	<?
                     		if ($_SESSION['access_token']) {
 			                 	$user = fetch('GET', '/v1/people/~:(firstName,lastName,emailAddress)');
-	                     		print "Hello $user->firstName $user->lastName. $user->emailAddress"; ?>
-	                     		<a href="logout.php">Logout</a>
+	                     		print "Hello $user->firstName $user->lastName ($user->emailAddress) "; ?>
+	                     		<br /><a href="logout.php">Logout</a>
 	                     		<? 
                     		} else { ?>
                     			<a href="auth.php">Authorize with LinkedIn</a>

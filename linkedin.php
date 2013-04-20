@@ -5,7 +5,7 @@
     // Change these
     define('API_KEY',      '1q661ywm4f06'                                          );
     define('API_SECRET',   'ADo2D4CZNxgOs0vz'                                       );
-    define('REDIRECT_URI', 'http://' . $_SERVER['SERVER_NAME'] . '/civitas/auth.php');
+    define('REDIRECT_URI', 'http://' . $_SERVER['SERVER_NAME'] . '/civitas/auth');
     define('SCOPE',        'r_fullprofile r_emailaddress r_contactinfo rw_nus'                        );
 
 	function getAuthorizationCode() {
