@@ -29,7 +29,7 @@ function post_to_url(path, params, method) {
 
     for(var key in params) {
         //if(params.hasOwnProperty(key)) {
-            var hiddenField = document.createElement("textarea");
+            var hiddenField = document.createElement("input");
             hiddenField.setAttribute("type", "hidden");
             hiddenField.setAttribute("name", key);
             hiddenField.setAttribute("value", params[key]);
@@ -79,14 +79,15 @@ function displayCurrStep(currStep){
 	}
 	else if (currStep === 3) {
 		var form_data = new Array();
-		var q1 = $('#q1').val();
-		var q2 = $('#q2').val();
-		var q3 = $('#q3').val();
-		var q4 = $('#q4').val();
+		var q1 = document.getElementById("qsh1").value;
+		var q2 = document.getElementById("qsh2").value;
+		var q3 = document.getElementById("qsh3").value;
+		var q4 = document.getElementById("qsh4").value;
 		form_data.push(q1);
 		form_data.push(q2);
 		form_data.push(q3);
 		form_data.push(q4);
+        alert(form_data);
 		post_to_url("resume", form_data, "POST");
 	}
 

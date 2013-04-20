@@ -35,7 +35,7 @@
 		<?
 			session_start();
 			include_once('linkedin.php');
-			$user = fetch('GET', '/v1/people/~:(firstName,lastName,emailAddress,positions,summary,pictureUrl)');
+			$user = fetch('GET', '/v1/people/~:(firstName,lastName,phoneNumbers,emailAddress,positions,summary,pictureUrl)');
 		?>
 		<div id="civitas-resume-container" class="container">
 			<img style="float: left; margin-right: 20px;" src="<? echo $user->pictureUrl; ?>" />
@@ -43,7 +43,9 @@
 				<? echo $user->firstName . ' ' . $user->lastName; ?>
 			</div>
 			<div id="civitas-resume-contactinfo">
-				<? echo 'Email: ' . $user->emailAddress; ?>
+                <? echo 'Email: ' . $user->emailAddress; ?><br />
+                <? $phones = objectToArray($user->phoneNumbers); ?>
+                <? echo 'Phone: ' . $phones['values'][0]['phoneNumber']; ?>
 			</div>
 			<div id="civitas-resume-summary">
 				<? echo $user->summary; ?>
@@ -84,6 +86,7 @@
             <div id="civitas-resume-companies">
             	This is a list of organizations you are applying to for your own reference. It will not be shown on the application that is emailed out to organizations you have selected. 
             </div>
+            <? print_r($_POST); ?>
 		</div>
 	</body>
 </html>
