@@ -4,7 +4,6 @@
  * Initializes web application.
  * 
  */
-
 $(document).ready(function(){
 
 	// This variable tracks the current page of the client
@@ -29,8 +28,8 @@ function displayCurrStep(currStep){
 	}
 
 	else if (currStep === 1) {
-		$('.selection-page').show();
 		
+		$('.selection-page').show();
 	}
 
 	else if (currStep === 2) {
