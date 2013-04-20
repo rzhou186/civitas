@@ -35,11 +35,11 @@
 
  	<? 
 		//session_start(); 
-		//include_once('linkedin.php');
+		include_once('linkedin.php');
     ?>
 
 	<body>
-		<div class="container">		
+		<div class="container">
 
 			<!-- Topbar -->
 			<div class="topbar">
@@ -106,7 +106,10 @@
 			<!-- Selection page -->
 			<div class="selection-page">
 
-				<div class="subhead"></div>
+				<div class="subhead">
+					<div class="subhead-inner">
+					</div>
+				</div>
 
 				<div class="row">
 					<div class="span4">

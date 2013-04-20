@@ -29,6 +29,10 @@ body {
 	margin: 0px;
 }
 
+.topbar .topbar-inner #civitas-user {
+	font-size: 16px;
+}
+
 .landing-page {
 	display: none;
 	min-height: 760px;
@@ -51,6 +55,9 @@ body {
 
 .landing-page .hero .hero-inner {
 	padding: 40px;
+	font-size: 36px;
+	color: #ffffff;
+	line-height: 36px;
 }
 
 .landing-page .options {
@@ -125,6 +132,13 @@ body {
 	-webkit-box-shadow: 0 2px 5px #999999;
 	   -moz-box-shadow: 0 2px 5px #999999;
 			box-shadow: 0 2px 5px #999999;
+}
+
+.selection-page .subhead-inner {
+	padding: 40px;
+	font-size: 36px;
+	color: #ffffff;
+	line-height: 36px;
 }
 
 .selection-page .row {
