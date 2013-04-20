@@ -15,13 +15,13 @@ $(document).ready(function(){
 	// Enable next-step buttons
 	$('.next-app-step').click(function(){
 		currStep++;
-		nextAppStep(currStep);
+		advanceAppStep(currStep);
 	});
 
 });
 
 /* This function advances the client to the next phase of his/her application */
-function nextAppStep(currStep){
+function advanceAppStep(currStep){
 
 	if (currStep === )
 

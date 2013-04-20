@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Civitas</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="stylesheets/fonts.css" type="text/css"/>
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css"/>
+
+		<!-- Javascripts -->
+		<script src="javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+	</head>
+
+	<body>
+		<div class="container">		
+
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="topbar-inner">
+					<div class="pull-left">
+						<div class="logo">
+							<h1>C I V I T A S</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Landing page -->
+			<div class="landing-page">
+				<div class="hero">
+					<div class="hero-inner">
+					</div>
+				</div>
+
+				<div class="options">
+					<div class="row">
+						<div class="span4">
+							<div class="span4-inner">
+								<img src="images/icons/apply.png">
+								<h1>Apply</h1>
+								<p>Lorem ipsum dolor sit amet. Duis faucibus, lacus in venenatis molestie, velit metus malesuada augue, at vehicula leo est sit amet mauris.</p>
+								<button class="btn btn-info btn-block" id="company">Open new application</button>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="span4-inner">
+								<img src="images/icons/discover.png">
+								<h1>Discover</h1>
+								<p>Lorem ipsum dolor sit amet. Duis faucibus, lacus in venenatis molestie, velit metus malesuada augue, at vehicula leo est sit amet mauris.</p>
+								<button class="btn btn-info btn-block">Open new application</button>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="span4-inner">
+								<img src="images/icons/join.png">
+								<h1>Join</h1>
+								<p>Lorem ipsum dolor sit amet. Duis faucibus, lacus in venenatis molestie, velit metus malesuada augue, at vehicula leo est sit amet mauris.</p>
+								<button class="btn btn-info btn-block">Open new application</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Selection page -->
+			<div class="selection-page">
+
+				<div class="subhead"></div>
+
+				<div class="row">
+					<div class="span4">
+						<h1>O R G A N I Z A T I O N S</h1>
+						<hr>
+						<form>
+							<div class="partner-list">
+								<div class="partner">
+									<input type="checkbox" value="">
+									<div class="name">Coffee</div>
+								</div>
+							</div>
+							<input class="btn btn-info" type="submit" value="Apply">
+						</form>
+					</div>
+					<div class="span8">
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Application page -->
+			<div class="application-page">
+			</div>
+
+			<!-- Footer -->
+			<img class="divider" src="images/other/divider.png">
+			<div class="footer">
+				<div class="footer-inner">
+					<h1>A 
+						<a href="http://www.github.com/rzhou186">Ray Zhou</a>, 
+						<a href="http://www.rogr.me">Roger Chen</a>, and 
+						<a href="http://www.github.com/gshubham">Shubham Goel </a>
+						production.
+					</h1>
+					<p>Copyright &copy; 2013 Civitas. All rights reserved.</p>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="javascripts/main.js" type="text/javascript"></script>
+
+</html>
