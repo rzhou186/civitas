@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Civitas PHP</title>
+		<title>Civitas</title>
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
@@ -20,7 +20,7 @@
 	<? 
 		//session_start(); 
 		include_once('linkedin.php');
-	?>
+    ?> 
 
 	<body>
 		<div class="container">		
@@ -137,8 +137,5 @@
 	<script src="javascripts/controller.js" type="text/javascript"></script>
 	<script src="javascripts/companies.js" type="text/javascript"></script>
 	<script src="javascripts/main.js" type="text/javascript"></script>
-	<script src="javascripts/Base64.js" type="text/javascript"></script>
-	<script src="javascripts/controller.js" type="text/javascript"></script>
-	<script src="javascripts/companies.js" type="text/javascript"></script>
 
 </html>

@@ -31,7 +31,7 @@ function displayCurrStep(currStep){
 		// Append all companies to the selection page sidebar
 		// Note: companyData is the global array defined (and modified) in companies.js functions
 		$('.selection-page').show();
-		getAllCompanies();
+		appendAllCompanies();
 
 	}
 

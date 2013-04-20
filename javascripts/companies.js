@@ -19,7 +19,14 @@ function companyEvent(data) {
 		name : obj[0][1].company_name,
 		description : obj[0][2].company_description
 	};
-	return company;
+	
+	// Display the company in the description page
+	// NOTE: This really is not a long-term solution
+	$('.description').html(
+		'<h1>' + company.name + '</h1>' +
+		'<p>' + company.description + '</p>'
+	);
+
 }
 
 /* Job data returned. This function adds the data to a list/some structure */
@@ -48,8 +55,7 @@ function allCompanies(data) {
 	console.log(data);
 
 	// Display the company names in the sidebar
-	// NOTE: This really is not a long-term solution, since this means getAllCompanies
-	// can only be used for displaying the sidebar scenario
+	// NOTE: This really is not a long-term solution
 	$('.partner-list').html('');
 	for (var i=0; i<companyData.length; i++){
 		$('.partner-list').append(
@@ -61,10 +67,13 @@ function allCompanies(data) {
 			'</div>'
 		);
 	}
+	// Make the newly append names clickable
+	initCompanyDescrips();
+
 }
 
 /* make AJAX request to get company data from a given ID */
-function getCompanyById(companyID){
+function appendCompanyDescrip(companyID){
 
 	var form_data = {
 		id : companyID
@@ -75,7 +84,7 @@ function getCompanyById(companyID){
 		type: "GET",
 		data: form_data,
 		success: function(data){
-			return companyEvent(data);
+			companyEvent(data);
 		}
 	});
 
@@ -118,7 +127,7 @@ function getAllJobs(companyID) {
 }
 
 /* make AJAX request to get data for all companies */
-function getAllCompanies() {
+function appendAllCompanies() {
 	/*var auth = make_base_auth('bbrandt@guidestar.org', 'gu1d3st@r');
 	var url = 'https://data.guidestar.org/v1/search/?q=zip:10027';*/
 	var request = $.ajax({
