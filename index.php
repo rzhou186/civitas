@@ -136,5 +136,8 @@
 	<script src="javascripts/controller.js" type="text/javascript"></script>
 	<script src="javascripts/companies.js" type="text/javascript"></script>
 	<script src="javascripts/main.js" type="text/javascript"></script>
+	<script src="javascripts/Base64.js" type="text/javascript"></script>
+	<script src="javascripts/controller.js" type="text/javascript"></script>
+	<script src="javascripts/companies.js" type="text/javascript"></script>
 
 </html>
