@@ -6,9 +6,7 @@
  */
 
 $("#company").click(function(){
-	/*getCompanyById(1);
-	getAllCompanies();*/
-	addCompany("Your mom", "Your mom", "Your mom");
+	
  });
 
  /* Company data returned. This function adds the data to a list/some structure */
