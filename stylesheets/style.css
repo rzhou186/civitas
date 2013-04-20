@@ -30,7 +30,7 @@ body {
 }
 
 .landing-page {
-	display: none;
+	/*display: none;*/
 	min-height: 760px;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 .selection-page {
-	/*display: none;*/
+	display: none;
 	min-height: 870px;
 }
 
