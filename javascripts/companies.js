@@ -29,8 +29,7 @@ function allJobsFromID(data) {
 
 /* All companies returned . This function adds the data to a list/some structure */
 function allCompanies(data) {
-	console.log(data);
-	/*var obj = jQuery.parseJSON(data);
+	var obj = jQuery.parseJSON(data);
 	for (var i = 0; i < obj.length; i++) {
 		var company = {
 			id : obj[i][0].company_id,
@@ -41,7 +40,7 @@ function allCompanies(data) {
 		};
 		companyData.push(company);
 	}
-	console.log(data);*/
+	console.log(data);
 }
 
 /* make AJAX request to get company data from a given ID */
@@ -99,14 +98,14 @@ function getAllJobs(companyID) {
 
 /* make AJAX request to get data for all companies */
 function getAllCompanies() {
-	var auth = make_base_auth('bbrandt@guidestar.org', 'gu1d3st@r');
-	var url = 'https://data.guidestar.org/v1/search/?q=zip:10027';
+	/*var auth = make_base_auth('bbrandt@guidestar.org', 'gu1d3st@r');
+	var url = 'https://data.guidestar.org/v1/search/?q=zip:10027';*/
 	var request = $.ajax({
-		url : url,
+		url : "http://goodjobs.rogr.me/api/list-companies.php",
 		type: "GET",
-		beforeSend : function(req) {
+		/*beforeSend : function(req) {
 			req.setRequestHeader('Authorization', auth);
-		},
+		},*/
 		success: function(data){
 			allCompanies(data);
 		}
