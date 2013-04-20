@@ -178,7 +178,7 @@ body {
 	margin: -5px 0px 0px 0px;
 }
 
-.selection-page .row .span4 form .partner-list .partner .name {
+.selection-page .row .span4 form .partner-list .partner .partner-name {
 	display: inline-block;
 	height: auto;
 	width: 240px;
@@ -194,12 +194,24 @@ body {
 
 .selection-page .row .span8 {
 	background-color: #ffffff;
-	min-height: 600px;
-	width: 600px;
+	min-height: 560px;
+	width: 520px;
+	padding: 40px;
 	margin-left: 40px;
 	-webkit-box-shadow: 0 2px 5px #999999;
 	   -moz-box-shadow: 0 2px 5px #999999;
 			box-shadow: 0 2px 5px #999999;
+}
+
+.selection-page .row .span8 h1 {
+	font-family: "CrimsonSemibold", Georgia, serif;
+	font-size: 32px;
+	font-weight: normal;
+	margin: 0px 0px 20px 0px;
+}
+
+.selection-page .row .span8 p {
+	font-size: 18px;
 }
 
 .application-page {
