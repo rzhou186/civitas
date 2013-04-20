@@ -108,7 +108,7 @@ body {
 }
 
 .selection-page {
-	/*display: none;*/
+	display: none;
 	min-height: 870px;
 }
 
