@@ -28,7 +28,7 @@ $("#company").click(function(){
  /* All companies returned . This function adds the data to a list/some structure */
  function allCompanies(data) {
  	var obj = jQuery.parseJSON(data);
- 	alert(obj.company_id);
+ 	alert(obj[0].company_id);
  	console.log(data);
 
  }
