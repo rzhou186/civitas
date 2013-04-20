@@ -109,6 +109,8 @@
 						</div>
 					</div>
 					<div class="span8 description">
+						<h1> Instructions </h1>
+						<p> Navigate by clicking on the various organizations on the sidebar, and select the ones that interest you the most. Once you've made your selection, you can proceed by clicking the Apply button. </p>
 					</div>
 				</div>
 
