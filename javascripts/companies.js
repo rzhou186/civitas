@@ -17,13 +17,16 @@ function companyEvent(data) {
 	var obj = jQuery.parseJSON(data);
 	var company = {
 		name : obj[0][1].company_name,
-		description : obj[0][2].company_description
+		description : obj[0][2].company_description,
+		url : obj[0][3].company_url,
+		image : obj[0][4].company_image,
+		location : obj[0][5].company_location
 	};
 	
 	// Display the company in the description page
 	// NOTE: This really is not a long-term solution
 	$('.description').html(
-		'<h1>' + company.name + '</h1>' +
+		'<h1>' + '<a href = "' + company.url + '">' + company.name + ', ' + company.location + '</h1>' +
 		'<p>' + company.description + '</p>'
 	);
 
@@ -49,6 +52,7 @@ function allCompanies(data) {
 			description : obj[i][2].company_description,
 			url : obj[i][3].company_url,
 			image : obj[i][4].company_image
+			location : obj[i][5].company_location;
 		};
 		companyData.push(company);
 	}
