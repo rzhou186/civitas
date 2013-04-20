@@ -9,7 +9,7 @@ var companyData = new Array();
 function make_base_auth(user, password) {
   var tok = user + ':' + password;
   var hash = Base64.encode(tok);
-  return "Basic " + hash;
+  return hash;
 }
 
 /* Company data returned. This function adds the data to a list/some structure */
