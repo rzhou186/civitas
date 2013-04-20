@@ -49,6 +49,8 @@ function displayCurrStep(currStep){
 		}
 
 		$('.application-page').show();
+        $('html, body').animate({scrollTop:0}, 'slow');
+
 	}
 
 }
