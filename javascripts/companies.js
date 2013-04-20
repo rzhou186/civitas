@@ -75,10 +75,9 @@ function getCompanyById(companyID){
 		type: "GET",
 		data: form_data,
 		success: function(data){
-			company = companyEvent(data);
+			return companyEvent(data);
 		}
 	});
-	return company;
 
 }
 
