@@ -48,7 +48,13 @@ function displayCurrStep(currStep){
 			}
 		}
 
+<<<<<<< HEAD
 		$('.application-page').fadeIn('slow');
+=======
+		$('.application-page').show();
+        $('html, body').animate({scrollTop:0}, 'slow');
+
+>>>>>>> be3f583e6fc8ab151105439f93368101b21e5d94
 	}
 
 }
