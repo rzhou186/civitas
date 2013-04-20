@@ -6,7 +6,7 @@
  */
 
 $("#company").click(function(){
-	
+
  });
 
  /* Company data returned. This function adds the data to a list/some structure */
@@ -27,7 +27,13 @@ $("#company").click(function(){
 
  /* All companies returned . This function adds the data to a list/some structure */
  function allCompanies(data) {
+ 	var obj = JSON.parse(data);
+ 	alert(obj.company_id);
+ 	alert(obj.company_description);
+ 	alert(obj.company_url);
+ 	alert(obj.company_image);
  	console.log(data);
+
  }
 
  /* make AJAX request to get company data from a given ID */
