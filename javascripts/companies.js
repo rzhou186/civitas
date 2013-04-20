@@ -96,7 +96,7 @@ function getAllCompanies() {
 	var request = $.ajax({
 		url : "https://data.guidestar.org/v1/search/?q=zip:10027",
 		username : "bbrandt@guidestar.org",
-		password : "gu1d3st@r"
+		password : "gu1d3st@r",
 		// url: "http://goodjobs.rogr.me/api/list-companies.php",
 		type: "GET",
 		success: function(data){
