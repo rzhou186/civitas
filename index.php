@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Civitas</title>
+		<title>Civitas PHP</title>
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
@@ -14,9 +14,6 @@
                 text-align: right;
 			}
 		</style>
-
-		<!-- Javascripts -->
-		<script src="javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
 
 	</head>
 
@@ -67,7 +64,7 @@
 								<img src="images/icons/apply.png">
 								<h1>Apply</h1>
 								<p>Lorem ipsum dolor sit amet. Duis faucibus, lacus in venenatis molestie, velit metus malesuada augue, at vehicula leo est sit amet mauris.</p>
-								<button class="btn btn-info btn-block" id="company">Open new application</button>
+								<button class="next-app-step btn btn-info btn-block">Open new application</button>
 							</div>
 						</div>
 						<div class="span4">
@@ -101,15 +98,13 @@
 						<hr>
 						<form>
 							<div class="partner-list">
-								<div class="partner">
-									<input type="checkbox" value="">
-									<div class="name">Coffee</div>
-								</div>
 							</div>
 							<input class="btn btn-info" type="submit" value="Apply">
 						</form>
 					</div>
-					<div class="span8">
+					<div class="span8 description">
+						<h1>Hello.</h1>
+						<p>What's your name?</p>
 					</div>
 				</div>
 
@@ -135,6 +130,12 @@
 
 		</div>
 	</body>
+
+	<!-- Javascripts -->
+	<script src="javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="javascripts/variables.js" type="text/javascript"></script>
+	<script src="javascripts/controller.js" type="text/javascript"></script>
+	<script src="javascripts/companies.js" type="text/javascript"></script>
 	<script src="javascripts/main.js" type="text/javascript"></script>
 	<script src="javascripts/Base64.js" type="text/javascript"></script>
 	<script src="javascripts/controller.js" type="text/javascript"></script>

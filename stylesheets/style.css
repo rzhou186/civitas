@@ -178,7 +178,7 @@ body {
 	margin: -5px 0px 0px 0px;
 }
 
-.selection-page .row .span4 form .partner-list .partner .name {
+.selection-page .row .span4 form .partner-list .partner .partner-name {
 	display: inline-block;
 	height: auto;
 	width: 240px;
@@ -192,14 +192,27 @@ body {
 	font-size: 20px;
 }
 
-.selection-page .row .span8 {
+.selection-page .row .description {
 	background-color: #ffffff;
-	min-height: 600px;
-	width: 600px;
+	min-height: 520px;
+	width: 520px;
+	padding: 40px;
 	margin-left: 40px;
 	-webkit-box-shadow: 0 2px 5px #999999;
 	   -moz-box-shadow: 0 2px 5px #999999;
 			box-shadow: 0 2px 5px #999999;
+}
+
+.selection-page .row .description h1 {
+	font-family: "CrimsonSemibold", Georgia, serif;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 28px;
+	margin: 0px 0px 20px 0px;
+}
+
+.selection-page .row .description p {
+	font-size: 18px;
 }
 
 .application-page {
