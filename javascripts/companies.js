@@ -81,13 +81,14 @@ function getAllJobs(companyID) {
 /* make AJAX request to get data for all companies */
 function getAllCompanies() {
 
-		var request = $.ajax({
+	var request = $.ajax({
 		url: "http://goodjobs.rogr.me/api/list-companies.php",
 		type: "GET",
 		success: function(data){
 			allCompanies(data);
 		}
 	});
+	
 }
 
 /* adds the given company (name, description, url) to the database */
