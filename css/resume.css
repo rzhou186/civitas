@@ -11,11 +11,11 @@ div {
 	font-size: 2em;
 }
 #civitas-resume-contactinfo {
-	font-size: 1.2em;
-	margin: 20px 0px;
+	font-size: 1em;
+	margin-top: 15px;
 }
 #civitas-resume-summary {
-
+	margin-top: 30px;
 }
 .civitas-resume-position {
 	margin-bottom: 5px;
@@ -27,5 +27,20 @@ div {
 	background-color: #5BA3F5;
 }
 .civitas-resume-position-name {
+	font-weight: bold;
+}
+#civitas-resume-questions {
+	margin-top: 20px;
+}
+.civitas-resume-question {
+	margin-top: 10px;
+}
+#civitas-resume-companies {
+	border: 1px solid #CCC;
+	padding: 30px;
+	margin: 20px;
+	background-color: #EBECF0;
+}
+.civitas-resume-question-title {
 	font-weight: bold;
 }

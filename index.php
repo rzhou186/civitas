@@ -132,16 +132,16 @@
             <div class="application-page">
 
             <div class="application-question">Why do you want to work in the social sector?</div>
-            <textarea id="q1" class="application-answer"></textarea>
+            <textarea id="qsh1" class="application-answer"></textarea>
 
             <div class="application-question">What is something now that you want to make ridiculous ten years from now?</div>
-            <textarea id="q2" class="application-answer"></textarea>
+            <textarea id="qsh2" class="application-answer"></textarea>
 
             <div class="application-question">What excites you about mankind?</div>
-            <textarea id="q3" class="application-answer"></textarea>
+            <textarea id="qsh3" class="application-answer"></textarea>
 
             <div class="application-question">Would you rather fight 100 duck sized horses or 1 horse sized duck?</div>
-            <textarea id="q4" class="application-answer"></textarea>
+            <textarea id="qsh4" class="application-answer"></textarea>
 
             <button class="btn btn-info next-app-step">Confirm</button>
 
