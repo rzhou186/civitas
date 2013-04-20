@@ -11,7 +11,6 @@
 
 		<!-- Javascripts -->
 		<script src="javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
-
 	</head>
 
 	<body>
@@ -111,5 +110,7 @@
 		</div>
 	</body>
 	<script src="javascripts/main.js" type="text/javascript"></script>
+	<script src="javascripts/controller.js" type="text/javascript"></script>
+	<script src="javascripts/companies.js" type="text/javascript"></script>
 
 </html>
