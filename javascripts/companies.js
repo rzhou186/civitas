@@ -26,7 +26,7 @@ function companyEvent(data) {
 	// Display the company in the description page
 	// NOTE: This really is not a long-term solution
 	$('.description').html(
-		'<h1>' + '<a href = "' + company.url + '">' + company.name + ', ' + company.location + '</h1>' +
+		'<h1>' + '<a href = "' + company.url + '">' + company.name + '</a></h1>' + '<h2 style = "color:grey">' + company.location + '</h2>' +
 		'<p>' + company.description + '</p>'
 	);
 
