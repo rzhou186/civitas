@@ -70,7 +70,7 @@
 							<div class="span4-inner">
 								<img src="images/icons/apply.png">
 								<h1>Apply</h1>
-								<p>Lorem ipsum dolor sit amet. Duis faucibus, lacus in venenatis molestie, velit metus malesuada augue, at vehicula leo est sit amet mauris.</p>
+								<p>Seeking a summer internship or job in the social sector? Apply to over 170 companies and nonprofit organizations with a single application.</p>
 								<button class="next-app-step btn btn-info btn-block">Open new application</button>
 							</div>
 						</div>
@@ -79,7 +79,7 @@
 								<img src="images/icons/discover.png">
 								<h1>Discover</h1>
 								<p>Lorem ipsum dolor sit amet. Duis faucibus, lacus in venenatis molestie, velit metus malesuada augue, at vehicula leo est sit amet mauris.</p>
-								<button class="btn btn-info btn-block">Open new application</button>
+								<button class="btn btn-info btn-block" disabled="disabled">Browse organizations list</button>
 							</div>
 						</div>
 						<div class="span4">
@@ -87,7 +87,7 @@
 								<img src="images/icons/join.png">
 								<h1>Join</h1>
 								<p>Lorem ipsum dolor sit amet. Duis faucibus, lacus in venenatis molestie, velit metus malesuada augue, at vehicula leo est sit amet mauris.</p>
-								<button class="btn btn-info btn-block">Open new application</button>
+								<button class="btn btn-info btn-block" disabled="disabled">Become a partner</button>
 							</div>
 						</div>
 					</div>
@@ -109,6 +109,7 @@
 						</div>
 					</div>
 					<div class="span8 description">
+						<p>Hover over our partner organizations to the left to learn more about them.</p>
 					</div>
 				</div>
 

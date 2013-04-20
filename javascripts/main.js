@@ -6,7 +6,7 @@
  */
 $(document).ready(function(){
 
-	currStep = 1;
+	currStep = 0;
 	displayCurrStep(currStep);
 
 	// Enable next-step buttons
@@ -21,23 +21,23 @@ $(document).ready(function(){
 function displayCurrStep(currStep){
 
 	if (currStep === 0) {
-		$('.landing-page').show();
+		$('.landing-page').fadeIn('slow');
 	}
 
 	else if (currStep === 1) {
 		
-		$('.landing-page').hide();
+		$('.landing-page').fadeOut('fast');
 
 		// Append all companies to the selection page sidebar
 		// Note: companyData is the global array defined (and modified) in companies.js functions
-		$('.selection-page').show();
+		$('.selection-page').fadeIn('slow');
 		appendAllCompanies();
 
 	}
 
 	else if (currStep === 2) {
 		
-		$('.selection-page').hide();
+		$('.selection-page').fadeOut('fast');
 
 		// Add all companies selected to clientCompanies (defined in variables.js)
 		var checkboxes = $('.partner-list :checkbox');
@@ -48,7 +48,7 @@ function displayCurrStep(currStep){
 			}
 		}
 
-		$('.application-page').show();
+		$('.application-page').fadeIn('slow');
 	}
 
 }
