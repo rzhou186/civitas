@@ -104,6 +104,7 @@ body {
 
 .landing-page .options .row .span4 .span4-inner .btn {
 	margin: 18px 0px 0px 0px;
+	font-family: 'RalewayLight', Helvetica, sans-serif;
 }
 
 .selection-page {
@@ -148,20 +149,47 @@ body {
 	text-align: center;
 }
 
-.selection-page .row .span4 ul.partner-list {
-	height: 538px;
-	width: 300px;
-	overflow-x: none;
-	overflow-y: auto;
-	background-color: red;
+.selection-page .row .span4 form {
+	margin: 0px;
 }
 
-.selection-page .row .span4 ul.partner-list li {
-	height: 538px;
+.selection-page .row .span4 form .partner-list {
+	height: 468px;
 	width: 300px;
-	overflow-x: none;
+	margin: 0px;
+	overflow-x: hidden;
 	overflow-y: auto;
-	background-color: red;
+}
+
+.selection-page .row .span4 form .partner-list .partner {
+	height: auto;
+	width: 280px;
+	padding: 10px 10px 10px 10px;
+	margin: 0px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.selection-page .row .span4 form .partner-list .partner input {
+	display: inline-block;
+	height: auto;
+	width: 30px;
+	padding: 0px;
+	margin: -5px 0px 0px 0px;
+}
+
+.selection-page .row .span4 form .partner-list .partner .name {
+	display: inline-block;
+	height: auto;
+	width: 245px;
+}
+
+.selection-page .row .span4 form .btn {
+	height: 50px;
+	width: 300px;
+	margin: 20px 0px 0px 0px;
+	font-family: 'RalewayLight', Helvetica, sans-serif;
+	font-size: 20px;
 }
 
 .selection-page .row .span8 {
@@ -197,6 +225,7 @@ body {
 
 .footer .footer-inner p {
 	line-height: 30px;
+	text-align: center;
 	font-size: 16px;
 	margin: 0px;
 }

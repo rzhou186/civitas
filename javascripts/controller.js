@@ -1,7 +1,6 @@
 /*
  * File: controller.js
  * ----------------------------------------
- * Controls DOM animations and other dynamic webpage elements.
+ * Defines functions for initializing and controlling dynamic page elements.
  * 
  */
-
