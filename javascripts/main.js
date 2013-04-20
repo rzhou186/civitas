@@ -52,5 +52,25 @@ function displayCurrStep(currStep){
         $('html, body').animate({scrollTop:0}, 'slow');
 
 	}
+	else if (currStep === 3) {
+		var q1 = $('#q1').val();
+		var q2 = $('#q2').val();
+		var q3 = $('#q3').val();
+		var q4 = $('#q4').val();
+		var form_data = {
+		q1 : q1,
+		q2 : q2,
+		q3 : q3,
+		q4 : q4
+	};
+		var request = $.ajax({
+		url : "resume",
+		type: "POST",
+		data : form_data,
+		success: function(data){
+			allCompanies(data);
+		}
+	});
+	}
 
 }
