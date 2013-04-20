@@ -8,7 +8,14 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="stylesheets/fonts.css" type="text/css"/>
 		<link rel="stylesheet" href="stylesheets/style.css" type="text/css"/>
-		<style>
+        <style>
+            .partner:hover {
+                color: #6778E6;
+            }
+            .description p {
+                margin-top: 20px;
+                line-height: 25px;
+            }
 			#civitas-user {
                 margin-top: 20px;
                 text-align: right;
