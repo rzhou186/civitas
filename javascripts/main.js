@@ -18,7 +18,7 @@ $("#company").click(function(){
  function getCompanyById(ID){
 
 	var form_data = {
-		ID : ID
+		id : ID
 	};
 
 	var request = $.ajax({
