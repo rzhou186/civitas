@@ -50,7 +50,7 @@ function allCompanies(data) {
 	// Display the company names in the sidebar
 	// NOTE: This really is not a long-term solution, since this means getAllCompanies
 	// can only be used for displaying the sidebar scenario
-	$('.partner-list').html('');
+	// $('.partner-list').html('');
 	for (var i=0; i<companyData.length; i++){
 		$('.partner-list').append(
 			'<div class="partner">' + 
@@ -61,6 +61,7 @@ function allCompanies(data) {
 			'</div>'
 		);
 	}
+	initCompanyDescrips();
 }
 
 /* make AJAX request to get company data from a given ID */
