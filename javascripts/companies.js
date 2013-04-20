@@ -2,9 +2,9 @@
  * File: companies.js
  * ----------------------------------------
  * Defines functions for retrieving, sending, and managing company information.
+ * Note that companyData is defined in main.js.
  * 
  */
-var companyData = new Array();
 
 function make_base_auth(user, password) {
   var tok = user + ':' + password;
@@ -34,13 +34,28 @@ function allCompanies(data) {
 		var company = {
 			id : obj[i][0].company_id,
 			name : obj[i][1].company_name,
-			description : objlobj[i][2].company_description,
+			description : obj[i][2].company_description,
 			url : obj[i][3].company_url,
 			image : obj[i][4].company_image
 		};
 		companyData.push(company);
 	}
 	console.log(data);
+
+	// Display the company names in the sidebar
+	// NOTE: This really is not a long-term solution, since this means getAllCompanies
+	// can only be used for displaying the sidebar scenario
+	$('.partner-list').html('');
+	for (var i=0; i<companyData.length; i++){
+		$('.partner-list').append(
+			'<div class="partner">' + 
+				'<input type="checkbox" value="' + companyData[i].id + '">' + 
+				'<div class="partner-name" id="' + companyData[i].id + '">' + 
+					companyData[i].name + 
+				'</div>' + 
+			'</div>'
+		);
+	}
 }
 
 /* make AJAX request to get company data from a given ID */
@@ -85,6 +100,7 @@ function getAllJobs(companyID) {
 	var form_data = {
 		id : companyID
 	};
+
 	var request = $.ajax({
 		url: "http://goodjobs.rogr.me/api/jobs.php",
 		type: "GET",
@@ -116,13 +132,13 @@ function getAllCompanies() {
 /* adds the given company (name, description, url) to the database */
 function addCompany(company_name, company_description, company_url) {
 
-		var form_data  = {
-			company_name : company_name,
-			company_description : company_description,
-			company_url : company_url
-		};
+	var form_data  = {
+		company_name : company_name,
+		company_description : company_description,
+		company_url : company_url
+	};
 
-		var request = $.ajax({
+	var request = $.ajax({
 		url: "http://goodjobs.rogr.me/api/add-company.php",
 		type: "POST",
 		data :  form_data,
@@ -130,4 +146,5 @@ function addCompany(company_name, company_description, company_url) {
 			allCompanies(data);
 		}
 	});
+
 }
