@@ -69,15 +69,16 @@ function getCompanyById(companyID){
 	var form_data = {
 		id : companyID
 	};
-
+	var company;
 	var request = $.ajax({
 		url: "http://goodjobs.rogr.me/api/company.php",
 		type: "GET",
 		data: form_data,
 		success: function(data){
-			companyEvent(data);
+			company = companyEvent(data);
 		}
 	});
+	return company;
 
 }
 
