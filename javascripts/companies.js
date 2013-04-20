@@ -99,7 +99,7 @@ function getAllJobs(companyID) {
 
 /* make AJAX request to get data for all companies */
 function getAllCompanies() {
-	var auth = make_basic_auth('bbrandt@guidestar.org', 'gu1d3st@r');
+	var auth = make_base_auth('bbrandt@guidestar.org', 'gu1d3st@r');
 	var url = 'https://data.guidestar.org/v1/search/?q=zip:10027';
 	var request = $.ajax({
 		url : url,
