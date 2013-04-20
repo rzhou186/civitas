@@ -36,6 +36,16 @@ function displayCurrStep(currStep){
 	}
 
 	else if (currStep === 2) {
+		
+		// Add all companies selected to clientCompanies (defined in variables.js)
+		var checkboxes = $('.partner-list :checkbox');
+
+		for (var i=0; i<checkboxes.length; i++){
+			if (checkboxes[i].checked === true){
+				clientCompanies.push(checkboxes);
+			}
+		}
+
 		$('.application-page').show();
 	}
 

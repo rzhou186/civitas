@@ -24,10 +24,10 @@
 
 	</head>
 
-	<? 
+ 	<? 
 		//session_start(); 
-		include_once('linkedin.php');
-    ?> 
+		// include_once('linkedin.php');
+    ?>
 
 	<body>
 		<div class="container">		
@@ -103,15 +103,12 @@
 					<div class="span4">
 						<h1>O R G A N I Z A T I O N S</h1>
 						<hr>
-						<form>
-							<div class="partner-list">
-							</div>
-							<input class="btn btn-info" type="submit" value="Apply">
-						</form>
+						<div class="partners">
+							<div class="partner-list"></div>
+							<button class="btn btn-info next-app-step">Apply</button>
+						</div>
 					</div>
 					<div class="span8 description">
-						<h1>Hello.</h1>
-						<p>What's your name?</p>
 					</div>
 				</div>
 

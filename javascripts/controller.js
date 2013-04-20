@@ -6,7 +6,7 @@
  */
 
 function initCompanyDescrips() {
-	$('.partner .partner-name').click(function(){
+	$('.partner .partner-name').hover(function(){
 		var id = $(this).attr('id');
 		appendCompanyDescrip(id);
 	});
