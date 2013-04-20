@@ -68,25 +68,27 @@
             <div id="civitas-resume-questions">
             	<div class="civitas-resume-question">
             		<div class="civitas-resume-question-title">Why do you want to work in the social sector?</div>
-            		<div class="civitas-resume-question-answer">This is an answer</div>
+                    <div class="civitas-resume-question-answer"><? echo $_POST[0]; ?></div>
             	</div>
             	<div class="civitas-resume-question">
             		<div class="civitas-resume-question-title">What is something now that you want to make ridiculous ten years from now?</div>
-            		<div class="civitas-resume-question-answer">This is an answer</div>
+                    <div class="civitas-resume-question-answer"><? echo $_POST[1]; ?></div>
             	</div>
             	<div class="civitas-resume-question">
             		<div class="civitas-resume-question-title">What excites you about mankind?</div>
-            		<div class="civitas-resume-question-answer">This is an answer</div>
+                    <div class="civitas-resume-question-answer"><? echo $_POST[2]; ?></div>
             	</div>
             	<div class="civitas-resume-question">
             		<div class="civitas-resume-question-title">Would you rather fight 100 duck sized horses or 1 horse sized duck?</div>
-            		<div class="civitas-resume-question-answer">This is an answer</div>
+                    <div class="civitas-resume-question-answer"><? echo $_POST[3]; ?></div>
             	</div>
             </div>
             <div id="civitas-resume-companies">
-            	This is a list of organizations you are applying to for your own reference. It will not be shown on the application that is emailed out to organizations you have selected. 
+                This is a list of organizations you are applying to for your own reference. It will not be shown on the application that is emailed out to organizations you have selected. 
+                
+                <? print_r($_POST); ?>
             </div>
-            <? print_r($_POST); ?>
+            <button script="alert(\"Thanks for submitting your application! Organizations will notify you if they are interested!\"); "class="btn">Submit</button> 
 		</div>
 	</body>
 </html>
