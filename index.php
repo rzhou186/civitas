@@ -102,8 +102,6 @@
 						</form>
 					</div>
 					<div class="span8 description">
-						<h1>Hello.</h1>
-						<p>What's your name?</p>
 					</div>
 				</div>
 
