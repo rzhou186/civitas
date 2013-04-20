@@ -6,8 +6,10 @@
  */
 
 $("#company").click(function(){
-	alert("Here");
 	getCompanyById(1);
+	getAllCompanies();
+	getJobById(1);
+	getAllJobs();
  });
 
  /* Company data returned. This function adds the data to a list/some structure */
