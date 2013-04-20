@@ -11,7 +11,8 @@ $("#company").click(function(){
  });
 
  function companyEvent(data) {
- 	alert("YO IM HERE");
+ 	console.log(data);
+ 	alert(data);
  }
 
  function getCompanyById(ID){
