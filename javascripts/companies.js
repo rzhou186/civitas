@@ -5,6 +5,13 @@
  * 
  */
 var companyData = new Array();
+
+function make_base_auth(user, password) {
+  var tok = user + ':' + pass;
+  var hash = Base64.encode(tok);
+  return "Basic " + hash;
+}
+
 /* Company data returned. This function adds the data to a list/some structure */
 function companyEvent(data) {
 	console.log(data);
@@ -92,13 +99,14 @@ function getAllJobs(companyID) {
 
 /* make AJAX request to get data for all companies */
 function getAllCompanies() {
-
+	var auth = make_basic_auth('bbrandt@guidestar.org', 'gu1d3st@r');
+	var url = 'https://data.guidestar.org/v1/search/?q=zip:10027';
 	var request = $.ajax({
-		url : "https://data.guidestar.org/v1/search/?q=zip:10027",
-		username : "bbrandt@guidestar.org",
-		password : "gu1d3st@r",
-		// url: "http://goodjobs.rogr.me/api/list-companies.php",
+		url : url,
 		type: "GET",
+		beforeSend : function(req) {
+			req.setRequestHeader('Authorization', auth);
+		}
 		success: function(data){
 			allCompanies(data);
 		}
