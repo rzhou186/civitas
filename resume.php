@@ -35,9 +35,10 @@
 		<?
 			session_start();
 			include_once('linkedin.php');
-			$user = fetch('GET', '/v1/people/~:(firstName,lastName,emailAddress,positions,summary)');
+			$user = fetch('GET', '/v1/people/~:(firstName,lastName,emailAddress,positions,summary,pictureUrl)');
 		?>
 		<div id="civitas-resume-container" class="container">
+			<img style="float: left; margin-right: 20px;" src="<? echo $user->pictureUrl; ?>" />
 			<div id="civitas-resume-name">
 				<? echo $user->firstName . ' ' . $user->lastName; ?>
 			</div>
@@ -61,7 +62,28 @@
 				</div>
 				<? }
 				?>
-			</div>
+            </div>
+            <div id="civitas-resume-questions">
+            	<div class="civitas-resume-question">
+            		<div class="civitas-resume-question-title">Why do you want to work in the social sector?</div>
+            		<div class="civitas-resume-question-answer">This is an answer</div>
+            	</div>
+            	<div class="civitas-resume-question">
+            		<div class="civitas-resume-question-title">What is something now that you want to make ridiculous ten years from now?</div>
+            		<div class="civitas-resume-question-answer">This is an answer</div>
+            	</div>
+            	<div class="civitas-resume-question">
+            		<div class="civitas-resume-question-title">What excites you about mankind?</div>
+            		<div class="civitas-resume-question-answer">This is an answer</div>
+            	</div>
+            	<div class="civitas-resume-question">
+            		<div class="civitas-resume-question-title">Would you rather fight 100 duck sized horses or 1 horse sized duck?</div>
+            		<div class="civitas-resume-question-answer">This is an answer</div>
+            	</div>
+            </div>
+            <div id="civitas-resume-companies">
+            	This is a list of organizations you are applying to for your own reference. It will not be shown on the application that is emailed out to organizations you have selected. 
+            </div>
 		</div>
 	</body>
 </html>
