@@ -31,7 +31,7 @@
         }
     }
 
-    header('Location: index.php');
+    header('Location: index');
 
     // Congratulations! You have a valid token. Now fetch your profile 
     //$user = fetch('GET', '/v1/people/~:(firstName,lastName)');
