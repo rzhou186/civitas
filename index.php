@@ -35,7 +35,7 @@
 
  	<? 
 		//session_start(); 
-		include_once('linkedin.php');
+		//include_once('linkedin.php');
     ?>
 
 	<body>
