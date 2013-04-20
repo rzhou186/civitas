@@ -12,6 +12,10 @@ $(document).ready(function(){
 	var currStep = 1;
 	displayCurrStep(currStep);
 
+	// This variable stashes all of our company data
+	// The functions defined in companies.js will be modifying this array
+	var companyData = new Array();
+
 	// Enable next-step buttons
 	$('.next-app-step').click(function(){
 		currStep++;
@@ -29,6 +33,11 @@ function displayCurrStep(currStep){
 
 	else if (currStep === 1) {
 		
+		// Append all companies to the selection page sidebar
+		// 
+
+		getAllCompanies();
+
 		$('.selection-page').show();
 	}
 

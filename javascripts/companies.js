@@ -2,9 +2,10 @@
  * File: companies.js
  * ----------------------------------------
  * Defines functions for retrieving, sending, and managing company information.
+ * Note that companyData is defined in main.js.
  * 
  */
-var companyData = new Array();
+
 /* Company data returned. This function adds the data to a list/some structure */
 function companyEvent(data) {
 	console.log(data);
