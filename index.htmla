@@ -8,18 +8,11 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="stylesheets/fonts.css" type="text/css"/>
 		<link rel="stylesheet" href="stylesheets/style.css" type="text/css"/>
-		<style>
-			#civitas-user {
-				margin-top: 30px;
-			}
-		</style>
+
+		<!-- Javascripts -->
+		<script src="javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
 
 	</head>
-
-	<? 
-		session_start(); 
-		include_once('linkedin.php');
-	?>
 
 	<body>
 		<div class="container">		
@@ -31,21 +24,7 @@
 						<div class="logo">
 							<h1>C I V I T A S</h1>
 						</div>
-                    </div>
-                    <div class="pull-right">
-                    	<div id="civitas-user">
-                    	<?
-                    		if ($_SESSION['access_token']) {
-			                 	$user = fetch('GET', '/v1/people/~:(firstName,lastName,emailAddress)');
-	                     		print "Hello $user->firstName $user->lastName. $user->emailAddress"; ?>
-	                     		<a href="logout.php">Logout</a>
-	                     		<? 
-                    		} else { ?>
-                    			<a href="auth.php">Authorize with LinkedIn</a>
-                    		<? }
-                    	?>
-                    	</div>
-                    </div>
+					</div>
 				</div>
 			</div>
 
@@ -97,13 +76,19 @@
 						<hr>
 						<form>
 							<div class="partner-list">
+								<div class="partner">
+									<input type="checkbox" value="">
+									<div class="name" value="">Coffee</div>
+								</div>
+								<div class="partner">
+									<input type="checkbox" value="">
+									<div class="name" value="">Coffee</div>
+								</div>
 							</div>
 							<input class="btn btn-info" type="submit" value="Apply">
 						</form>
 					</div>
 					<div class="span8">
-						<h1>Hello.</h1>
-						<p>What's your name?</p>
 					</div>
 				</div>
 
@@ -129,12 +114,8 @@
 
 		</div>
 	</body>
-
-	<!-- Javascripts -->
-	<script src="javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
-	<script src="javascripts/variables.js" type="text/javascript"></script>
+	<script src="javascripts/main.js" type="text/javascript"></script>
 	<script src="javascripts/controller.js" type="text/javascript"></script>
 	<script src="javascripts/companies.js" type="text/javascript"></script>
-	<script src="javascripts/main.js" type="text/javascript"></script>
 
 </html>
