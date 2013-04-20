@@ -56,7 +56,6 @@ function allCompanies(data) {
 		};
 		companyData.push(company);
 	}
-	console.log(data);
 
 	// Display the company names in the sidebar
 	// NOTE: This really is not a long-term solution
