@@ -84,11 +84,14 @@
             	</div>
             </div>
             <div id="civitas-resume-companies">
-                This is a list of organizations you are applying to for your own reference. It will not be shown on the application that is emailed out to organizations you have selected. 
-                
-                <? print_r($_POST); ?>
+                This is a list of organizations you are applying to for your own reference. It will not be shown on the application that is emailed out to organizations you have selected: 
+                <?php
+                    for ($i = 4; $i < sizeof($_POST); $i++) {
+                        echo '<div>' . $_POST[$i] . '</div>';
+                    }
+                ?>
             </div>
-            <button script="alert(\"Thanks for submitting your application! Organizations will notify you if they are interested!\"); "class="btn">Submit</button> 
+            <a href="done"><button class="btn">Submit</button></a>
 		</div>
 	</body>
 </html>
