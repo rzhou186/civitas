@@ -90,7 +90,6 @@ function displayCurrStep(currStep){
         for(var i = 0; i < clientCompanies.length; i++) {
             form_data.push(clientCompanies[i]);
         }
-        alert(form_data);
 		post_to_url("resume", form_data, "POST");
 	}
 
