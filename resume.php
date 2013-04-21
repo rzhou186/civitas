@@ -88,7 +88,7 @@
                 
                 <? print_r($_POST); ?>
             </div>
-            <button script="alert(\"Thanks for submitting your application! Organizations will notify you if they are interested!\"); "class="btn">Submit</button> 
+            <button class="btn btn-info" script="alert(\"Thanks for submitting your application! Organizations will notify you if they are interested!\"); "class="btn">Submit</button> 
 		</div>
 	</body>
 </html>
