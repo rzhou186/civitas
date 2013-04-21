@@ -87,7 +87,7 @@
 							<div class="span4-inner">
 								<img src="images/icons/discover.png">
 								<h1>Discover</h1>
-								<p>Browse a collection of over 3 nonprofits and companies in the social sector. Filter organizations by location, interest, and other.</p>
+								<p>Browse a collection of over 3 nonprofits and companies in the social sector. Filter organizations by location, interest, and other fields.</p>
 								<button class="btn btn-info btn-block" disabled="disabled">Browse organizations list</button>
 							</div>
 						</div>
